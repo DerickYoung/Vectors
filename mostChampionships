@@ -1,0 +1,25 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+/* This program displays the top 5 numbers of NBA championships won
+ * based on the number selected by the user.*/
+ 
+int main() {
+  int userNum;
+  const int TOP_FIVE = 5;
+  vector<int> topTeams(TOP_FIVE);
+  
+  topTeams.at(0) = 17;
+  topTeams.at(1) = 16;
+  topTeams.at(2) = 6;
+  topTeams.at(3) = 5;
+  topTeams.at(4) = 4;
+  
+  do {
+    cout << "Select a number between 1 and 5: "
+    cin >> userNum;
+    } while (userNum < 0 && userNum > TOP_FIVE);
+    
+  cout << "The " << userNum << "team has " << topTeams.at(i) << "NBA championships" << endl;
+}
